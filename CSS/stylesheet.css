@@ -1,0 +1,305 @@
+/* CSS clear */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* html */
+html
+{
+    scroll-behavior:smooth;
+}
+
+/* CSS variables */
+
+:root {
+    --navbar-height: 200px;
+}
+
+
+/* Navigation Bar */
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#nav-bar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+/* Nav-Bar logo-img */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo>img {
+    height: 4rem;
+    width: 4rem;
+    margin: 3px 6px;
+
+}
+
+
+/* Nav-Bar UL List Style */
+
+#nav-bar ul {
+    color: white;
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#nav-bar .items {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#nav-bar .items a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 22px;
+}
+
+#nav-bar .items a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+/* Home */
+
+#home {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+    filter: blur(1.5px);
+}
+
+
+#home p {
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+/* Services-Container  */
+
+#services {
+    display: flex;
+    margin: 34px;
+}
+
+#services .box {
+    align-items: center;
+    border: solid 3px red;
+    border-radius: 30px;
+    padding: 34px;
+    margin: 30px 37px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+}
+
+
+#services img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+
+  /* Clients-Container  */
+
+ 
+
+    #clients-container::before 
+    {
+        content: "";
+        background: url(../bg.jpg) no-repeat center center/cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.3;
+        filter: blur(1.5px);
+    }
+
+    #clients-container
+    {
+       position: relative;
+       z-index: -2;
+    }
+ 
+
+    #clients .clients-items
+    {
+        padding: 34px 34px;
+        
+    }
+
+
+     #clients 
+     {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+     } 
+
+      #clients img
+     {
+        height: 124px;
+     }
+
+
+
+     /* Contact */
+
+     #contact::before 
+     {
+         content: "";
+         background: url(../contact.jpg) no-repeat center center/cover;
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0px;
+         left: 0px;
+         z-index: -1;
+         opacity: 0.7;
+         filter: blur(1.5px);
+     }
+ 
+     #contact
+     {
+        position: relative;
+         z-index: 0;
+     }
+
+     #contact-box
+     {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+     }
+
+     #contact-box input, #contact-box textarea
+     {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 22px;
+        font-size: 1.1rem;
+        font-family: 'Times New Roman', Times, serif;
+     }
+
+     #contact-box form label
+     {
+        font-size: 1.3rem;
+        font-family: 'Bree Serif', serif;
+     }
+  
+     #contact-box #form-btn .btn
+     {
+        width: 160px;
+        background-color: black;
+        color: white;
+     }
+     #contact-box #form-btn .btn:hover
+     {
+        width: 160px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border: 2px solid black;
+     }
+
+
+
+
+   /* Utility Classes */
+
+   .center {
+    text-align: center;
+   }
+
+.btn {
+    color: black;
+    background-color: rgb(255, 47, 0);
+    font-size: 1.5rem;
+    padding: 6px 20px;
+    border-radius: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    border: solid 2px white;
+    margin: 17px;
+}
+
+.btn:hover {
+    background-color: rgb(254, 77, 37);
+}
+
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+
+
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+
+
+/* Footer */
+
+footer
+{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
